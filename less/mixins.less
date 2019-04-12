@@ -1,19 +1,17 @@
 // Mixins in here
-.button (@radius, @color){
+.button (@bg-color, @text-color, @p-t, @b-r){
     display: flex;
     justify-content: center;
+   border-radius: @b-r;
     width: 180px;
     height: 50px;
-    border-radius: @radius;
-    background-color: @color;
-  
-    color: white;
+    background-color: @bg-color;
+    color: @text-color;
     p {
+        padding-top: @p-t;
         display: flex;
         justify-content: center;
         font-size: 2rem;
-        padding-top: 5%;
-       
     }
    
 }
